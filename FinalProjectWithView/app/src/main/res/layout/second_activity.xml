@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="368dp"
+        android:layout_height="222dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/fetchfiles"
+            android:layout_width="357dp"
+            android:layout_height="194dp"
+            android:text="FETCH FILES"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="364dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="No file is selected"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="240dp"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="368dp"
+        android:layout_height="148dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="334dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/selectFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="SELECT FILE" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:layout_gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="UPLOAD" />
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>
